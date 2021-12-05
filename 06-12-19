@@ -1,0 +1,39 @@
+/* Deka ari8mous se pinaka kai ektiponoume ton pinaka , min , max , meso oro */
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE  10
+
+int main() {
+  int min,max,list[SIZE] , i ;
+  float mo;
+  i = 1;
+  printf("Give the 1st number in series \n", );
+  scanf("%d\n",&list[i]);
+
+
+  min = list[0];
+  max = list[0];
+  mo  = 0;
+  do {
+    printf("Give the %d number in series \n", i+1 );
+    scanf("%d\n",&list[i]);
+    i = i + 1;
+
+    if (max < list[i]) {
+      max = list[i];
+    }
+    if (min > list[i]) {
+      max = list[i];
+    }
+    mo  = list[i] + mo ;
+  } while(i < 10);
+
+  for (i = 0; i < 10; i++) {
+    printf("%d\n",list[i] );
+  }
+  printf("Mesos Oros  :%1.f\n",mo/10
+          "Max :%d",max
+          "min : %d", min);
+  system("PAUSE");  
+  return 0;
+}

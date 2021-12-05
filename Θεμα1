@@ -1,0 +1,36 @@
+name=input("Όνομα : ") #ονομα , ωρες του μηνα , ορομισθιο , οικογενιακη κατασταση
+
+time=int(input("Ωρες εργασιας για τον μηνα :"))
+if time <= 0:
+    while time <= 0:
+        print("Κάτι εδωσες λαθος")
+        time=int(input("Ωρες εργασιας για τον μηνα :"))
+        pass
+    pass
+
+salary=int(input("Ωρομισθιο :"))
+if salary <= 0:
+    while salary <= 0:
+        print("Κάτι εδωσες λαθος")
+        salary=int(input("Ωρομισθιο :"))
+        pass
+    pass
+
+marSta=input("Αγγαμος = 'Οχι' , Εγγαμος = 'Ναι'")
+
+sum = salary * time
+
+if sum =< 1000 :
+    sum = sum * 0.85
+    pass
+else    :
+    sum =   sum *   0.75
+    pass
+
+if marSta = 'Ναι':
+    sum = sum + 50
+    pass
+
+
+print("Ονομα :",name)
+print("Μισθος :",sum)

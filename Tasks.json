@@ -1,0 +1,26 @@
+FPS system {
+  1 Camera
+  2 Movement{
+    Climb
+    Vault
+  }
+  3 Interaction
+  4 Weapons{
+      1 Animation
+      2 Projectile
+      3 Recoil
+      4 Hit scan
+        }
+  5 Ammo system
+  6 Inventory
+}
+
+Weapon Customization{
+  1 Attachments
+  2 Colour (Change  texture )
+}
+
+NPC AI{
+  1 Seeker AI(God Mode)
+  2 Hostile
+}
